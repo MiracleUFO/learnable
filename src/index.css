@@ -12,6 +12,58 @@ code {
     monospace;
 }
 
-#root {
-	padding: 20px 3%;
+* {
+	color: #273043;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
+
+button {
+	display: inline;
+	font: 14px Roboto bold;
+	text-align: center;
+	border: 1px solid #17255A;
+	border-width: 2px 1px;
+	border-radius: 5px;
+	padding: 4px;
+	background: rgba(0,0,0,0);
+}
+
+button a {
+	padding: 0;
+	color: #17255A;
+}
+
+a {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#root {
+	padding: 20px 2%;
+}
+
+header, nav {
+	font-family: Nunito;
+	font-weight: 600;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#genesysIcon {
+	padding-right: 5%;
+}
+
+#devStudio, #devStudio span {
+	position: relative;
+	right: 0;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 0 15px;
+}
+
+
