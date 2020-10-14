@@ -1,8 +1,9 @@
 import React from 'react';
+import LearnableHeader from './Learnable-Header';
 
 function Learnable() {
 	return (
-		<div>Learnable</div>
+		<LearnableHeader/>
 	)
 }
 

@@ -5,9 +5,9 @@ import {NavLink} from 'react-router-dom'
 function Header() {
 	return (
 		<header>
-		<img src={icon} alt='Genesys Icon' id='genesysIcon'/>
-			<nav>
+			<nav id='nav'>
 			<div>
+				<NavLink to='/'><img src={icon} alt='Genesys Icon' id='genesysIcon'/></NavLink>
 				<NavLink to='/Learnable'>LEARNABLE</NavLink>
 				<NavLink to='#'>AGORA</NavLink>
 				<NavLink to='#'>STARTZONE</NavLink>

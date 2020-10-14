@@ -2,7 +2,7 @@ import React from 'react';
 
 function Apply() {
 	return (
-		<div>Apply</div>
+		<main>Apply</main>
 	)
 }
 

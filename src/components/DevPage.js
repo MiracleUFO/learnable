@@ -2,7 +2,7 @@ import React from 'react';
 
 function DevPage() {
 	return (
-		<div>Developer</div>
+		<main>Developer</main>
 	)
 }
 

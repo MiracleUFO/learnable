@@ -2,7 +2,7 @@ import React from 'react';
 
 function DesignerPage() {
 	return (
-		<div>Designer</div>
+		<main>Designer</main>
 	)
 }
 
