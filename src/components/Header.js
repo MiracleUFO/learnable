@@ -1,10 +1,10 @@
 import React from 'react';
-import icon from '../images/landing/GenesysIcon.png';
+import icon from '../images/header/GenesysIcon.png';
 import {NavLink} from 'react-router-dom'
 
 function Header() {
 	return (
-		<header>
+		<header id='header' className='paddingMain'>
 			<nav id='nav'>
 			<div>
 				<NavLink to='/'><img src={icon} alt='Genesys Icon' id='genesysIcon'/></NavLink>

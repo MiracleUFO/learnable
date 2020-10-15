@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 
 function LearnableHeader() {
 	return (
-		<header id='learnableHeader'>
+		<header id='learnableHeader' className='cadetBlue'>
 			<nav id='learnableNav'>
 				<NavLink to='/Learnable'>HOME</NavLink>
 				<NavLink to='/Dev'>SOFTWARE DEVELOPERS</NavLink>

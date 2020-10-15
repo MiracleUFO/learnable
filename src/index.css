@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,10 +13,13 @@ code {
 }
 
 * {
-	color: #273043;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+p {
+	color: #273043;
 }
 
 button {
@@ -40,13 +42,65 @@ a {
 	padding: 10px;
 	text-decoration: none;
 	font-size: 14px;
+	color: #273043;
 }
 
-#root {
-	min-width: 100%;
+#root > div:first-child {
+	min-height:100%;
+	overflow: hidden;
+	display:grid;
+	grid-template-rows:auto auto 1fr auto;
+	grid-template-areas:'header' 'learnableHeader' 'main' 'footer';
+}
+
+ #root, main {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+.padding {
+	padding: 0 7%;
+}
+
+.paddingMain {
+	padding: 0 4%;
+}
+
+.flexBox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexBox2 {
+	display: flex;
+	align-items: center;
+}
+
+.flexBox3 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.arr {
+	position: absolute;	
+}
+
+.cadetBlue {
+	background: #17255A;
+	color: white;
 }
 
 /* - - - - Header - - - - */
+
+#header {
+	grid-area: header;
+}
 
 header, nav {
 	width: 100%;
@@ -62,7 +116,6 @@ header, nav, #nav div:first-child {
 #nav {
 	height: 144px;
 	justify-content: space-between;
-	padding: 0 2%;
 }
 
 #genesysIcon {
@@ -74,6 +127,7 @@ header, nav, #nav div:first-child {
 }
 
 span, #devStudio {
+	letter-spacing: 1px;
 	font-size: 13px;
 	font-weight: 400;
 	padding: 0 15px;
@@ -82,7 +136,8 @@ span, #devStudio {
 /* - - - - Learnable Header - - - - */
 
 #learnableHeader {
-	background: #17255A;
+	padding: 0 5%;
+	grid-area: learnableHeader;
 	height: 50px;
 	justify-content: center;
 }
@@ -98,37 +153,38 @@ span, #devStudio {
 
 /* - - - - Main - - - - */
 
-main, footer {
-	padding: 0 2%;
+main {
+	grid-area: main;
 }
 
 /* - - - - Footer - - - - */
 
 footer {
-	position: fixed;
-	bottom: 0;
+	grid-area: footer;
 	font-size: 15px;
 	font-weight: 400;
 	min-height: 300px;
-	justify-content: space-between;
+	min-width: 100vw;
+	padding: 50px 4% 30px;
 }
 
 footer a {
 	text-decoration: underline;
+	color: 
 }
 
-footer, #footerRow1 div, #footerRow2 {
-	display: flex;
-	flex-direction: column;
+ #footerImgDiv {
+	width: 30%;
+	min-width: 420px;
 }
 
-#footerRow1 div {
-	width:30%;
+#addressDiv {
+	width: 25%;
 }
 
-#footerRow1, #footerRow1 div:nth-child(2), #footerRow1 div:nth-child(3), #footerIcons {
-	display: flex;
-	justify-content: space-between;
+#footerImgDiv p {
+	align-self: flex-end;
+	width: 180px;
 }
 
 #footerRow2 {
@@ -136,10 +192,112 @@ footer, #footerRow1 div, #footerRow2 {
 }
 
 #footerIcons {
-	width:18%;
+	width: 18%;
 	height: 18px;
+	margin-bottom: 5px;
+	margin-top: 70px;
 }
 
+.subscribe {
+	width: 90%;
+	height: 250px;
+}
 
+#cyanSubscribe {
+	background:#03CEA4;
+	color: #273043;
+}
 
+/* - - - - Landing - - - - */
 
+#landing  {
+	padding-top: 35px
+}
+
+#landing section:nth-child(2) {
+	padding: 90px 0;
+}
+
+#landingIntro div {
+	padding: 30px 0;	
+}
+
+#arr1 {
+	left: 4%;
+	top: 660px;
+}
+
+h1 {
+	
+	color: #17255A;
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 40px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	padding: 40px 0;
+}
+
+.h1Intro {
+	width: 60%;
+}
+
+#landingIntro p {
+	width: 40%;
+	font-size: 16px;
+	font-weight: 600;
+} 
+
+.picRight {
+	max-width: 90%;
+}
+
+.padding2 {
+	height: 780px;
+	padding: 90px 0;
+}
+
+.centeredIcon {
+	position: absolute;
+	margin: 0 auto;
+	left: 50%;
+	top:750px;
+	font-weight: 600;
+}
+
+#whiteFont {
+	color: white;
+}
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.sectionTag {
+	width: 40%;
+	min-height: 201px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.sectionTag a {
+	text-decoration: underline;
+	color:#03CEA4;
+	font-weight: 600;
+}
+
+.grey {
+	background: #EEE;
+}
+
+.otherThings {
+	height: 570px;
+}
+
+#arr2 {
+	left: 4%;
+	top: 5100px;
+}

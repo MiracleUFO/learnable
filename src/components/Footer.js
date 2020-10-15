@@ -6,31 +6,35 @@ import  LI from '../images/footer/linkedIn.png';
 import  twitter from '../images/footer/twitter.png';
 import  vimeo from '../images/footer/vimeo.png';
 import YT from '../images/footer/YT.png';
+import footerImg from '../images/footer/footerImg.png';
 
 function Footer() {
 	return (
-		<footer>
-			<div id='footerRow1'>
-				<div>
-					<NavLink to='#'>BUILD DIFFERENT</NavLink>
-					<NavLink to='#'>DESIGN DIFFERENT</NavLink>
-					<NavLink to='#'>APPLY YOUR KNOWLEDGE</NavLink>
-					<NavLink to='#'>FAQs</NavLink>
+		<footer className='flexBox flexColumn'>
+			<div className='flexBox'>
+				<div className='flexColumn'>
+					<NavLink to='/DevPage'>BUILD DIFFERENT</NavLink>
+					<NavLink to='/DesignerPage'>DESIGN DIFFERENT</NavLink>
+					<NavLink to='/Apply'>APPLY YOUR KNOWLEDGE</NavLink>
+					<NavLink to='/FAQs'>FAQs</NavLink>
 				</div>
 
-				<div>
+				<div id='addressDiv' className='flexColumn'>
 					<p>Our Local Campus center: Kilometer 7, Enugu/Port Harcourt, Expressway, Centenary City, Enugu. Nigeria</p>
-					<NavLink to='#'>GET IN TOUCH</NavLink>
+					<NavLink to='#'>GET IN TOUCH</NavLink>	
 				</div>
 
-				<div>
-					<img src='' />
-					<p>Learnable is proud to be a collaborative effort of all the arms of our product team</p>
+				<div id='footerImgDiv' className='flexBox'>
+					<img src={footerImg} id='footerImg'/>
+					<p>Learnable is proud to be a collaborative effort of all the arms of our product team
+					<br />
+					<NavLink to='#'>HEAD TO DEVSTUDIO</NavLink>
+					</p>
 				</div>
 			</div>
 
-			<div id='footerRow2'>
-				<div id='footerIcons'>
+			<div id='footerRow2' className='flexColumn'>
+				<div id='footerIcons' className='flexBox'>
 					<img src={twitter} alt='Twitter icon' />
 					<img src={FB} alt='Facebook icon' />
 					<img src={LI} alt='LinkedIn icon' />
