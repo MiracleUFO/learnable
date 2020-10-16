@@ -11,6 +11,7 @@ import footerImg from '../images/footer/footerImg.png';
 function Footer() {
 	return (
 		<footer className='flexBox flexColumn'>
+
 			<div className='flexBox'>
 				<div className='flexColumn'>
 					<NavLink to='/DevPage'>BUILD DIFFERENT</NavLink>
@@ -44,6 +45,7 @@ function Footer() {
 				</div>
 				<div><span>Genesys 2020</span><span>Privacy Statement</span></div>
 			</div>
+			
 		</footer>
 	)
 }

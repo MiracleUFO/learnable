@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 
 function Header() {
 	return (
-		<header id='header' className='paddingMain'>
+		<header id='header'>
 			<nav id='nav'>
 			<div>
 				<NavLink to='/'><img src={icon} alt='Genesys Icon' id='genesysIcon'/></NavLink>

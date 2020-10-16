@@ -7,14 +7,14 @@ import DevPage from './components/DevPage';
 import DesignerPage from './components/DesignerPage';
 import Journal from './components/Journal';
 import Apply from './components/Apply';
-import FAQs from './components/FAQs';
+import FAQPage from './components/FAQPage';
 import Footer from './components/Footer'
 
 
 
 function App() {
   return (
-    <div>
+    <div id='wrapper'>
     <Header />
     <Route exact path='/' component={Landing} />
     <Route path='/Learnable' component={Learnable} />
@@ -22,7 +22,7 @@ function App() {
     <Route path='/DesignerPage' component={Learnable} />
     <Route path='/Journal' component={Journal} />
     <Route path='/Apply' component={Apply} />
-    <Route path='/FAQs' component={FAQs} />
+    <Route path='/FAQs' component={FAQPage} />
     <Footer />
     </div>
   );
