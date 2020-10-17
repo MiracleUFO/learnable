@@ -1,14 +1,15 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import SubscribeDiv from './SubscribeDiv';
 import introVid from '../images/landing/introVid.png';
 import arrDown from '../images/shared/arr-down.png';
+import line from '../images/landing/line.png';
 import arrUp from '../images/shared/arr-up.png';
 import learnableMan from '../images/landing/pic2-man.png';
 import agora from '../images/landing/agora.png';
 import startZone from '../images/landing/startZone.png';
 import otherThings from '../images/landing/group.png';
 import bestT from '../images/landing/bestT.png';
-import line from '../images/landing/line.png';
 
 function Landing() {
 	return (
@@ -87,7 +88,7 @@ function Landing() {
 
 			<section>
 				<img src={arrUp} className='arr' id='arr2'/>
-				<div className='floatRight subscribe flexBox2 flexBox3' id='cyanSubscribe'> 
+				<div className='floatRight subscribe flexBox2 flexBox3 cyanSubscribe'> 
 					<h2 className='h1Intro'>Stay up to date on what we are doing and new learning opportunities</h2>
 					<div><p>Your email</p> <img src={line} /> <p>View privacy policy</p></div>
 					<button>Subscribe</button>

@@ -1,6 +1,8 @@
 import React from 'react';
 import LearnableHeader from './Learnable-Header';
 import FAQs from './FAQs';
+import JournalGrid from './JournalGrid';
+import SubscribeDiv from './SubscribeDiv';
 import {NavLink} from 'react-router-dom';
 import line from '../images/learnable-home/linebold.png';
 import introVid from '../images/learnable-home/learnableIntroVid.png';
@@ -10,7 +12,33 @@ import avatar from '../images/shared/avatar.png';
 import learnExp from '../images/learnable-home/learnExp.png';
 import eligible from '../images/learnable-home/eligible.png';
 import culture from '../images/learnable-home/culture.png';
-
+import mentioned1 from '../images/learnable-home/mentioned.png';
+import mentioned2 from '../images/learnable-home/mentioned2.png';
+import mentioned3 from '../images/learnable-home/mentioned3.png';
+import mentioned4 from '../images/learnable-home/mentioned4.png';
+import mentioned5 from '../images/learnable-home/mentioned5.png';
+import fun1 from '../images/learnable-home/fun1.png';
+import fun2 from '../images/learnable-home/fun2.png';
+import fun3 from '../images/learnable-home/fun3.png';
+import fun4 from '../images/learnable-home/fun4.png';
+import fun5 from '../images/learnable-home/fun5.png';
+import fun6 from '../images/learnable-home/fun6.png';
+import fun7 from '../images/learnable-home/fun7.png';
+import fun8 from '../images/learnable-home/fun8.png';
+import fun9 from '../images/learnable-home/fun9.png';
+import fun10 from '../images/learnable-home/fun10.png';
+import fun11 from '../images/learnable-home/fun11.png';
+import fun12 from '../images/learnable-home/fun12.png';
+import fun13 from '../images/learnable-home/fun13.png';
+import fun14 from '../images/learnable-home/fun14.png';
+import fun15 from '../images/learnable-home/fun15.png';
+import fun16 from '../images/learnable-home/fun16.png';
+import expert1 from '../images/learnable-home/expert1.png';
+import expert2 from '../images/learnable-home/expert2.png';
+import expert3 from '../images/learnable-home/expert3.png';
+import expert4 from '../images/learnable-home/expert4.png';
+import expert5 from '../images/learnable-home/expert5.png';
+import expert6 from '../images/learnable-home/expert6.png';
 
 function Learnable() {
 	return (
@@ -115,7 +143,7 @@ function Learnable() {
 				</div>
 			</section>
 
-			<section className='flexBox3 flexBox2 genesysLearnableSects padding'>
+			<section className='flexBox flexBox2  genesysLearnableSects  curriculumGridCont'>
 			
 				<div className='flexColumn'>
 					<p>FOR DEVELOPERS</p>
@@ -132,12 +160,27 @@ function Learnable() {
 					<NavLink to='#' className='greenFont'>LEARN MORE</NavLink>
 				</div>
 
-				<div className='floatRight'></div>
+				<div className='floatRight curriculumGrid' alt='Developer curriculum'>
+					<div className='cadetBlue'><h1 className='whiteFont'>Program with JavaScript</h1></div>
+					<div className='greenDiv'><h1 className='whiteFont'>Version Control with Git</h1></div>
+					<div className='yellowDiv'><h1>Web Development with React</h1></div>
+					<div className='darkPurpleDiv'><h1 className='whiteFont'>Building APIs with NodeJS</h1></div>
+					<div className='gunMetalDiv'><h1 className='whiteFont'>Managing Data with MongoDB</h1></div>
+					<div className='orangeDiv'><h1 className='whiteFont'>Deploying with Heroku</h1></div>
+				</div>
 
 			</section>
 
-			<section className='flexBox3 flexBox2 greyDiv genesysLearnableSects padding'>
-				<div className='floatLeft'></div>
+			<section className='flexBox flexBox2 greyDiv genesysLearnableSects curriculumGridCont'>
+
+				<div className='floatRight curriculumGrid' alt='Designer curriculum'>
+					<div className='cadetBlue'><h1 className='whiteFont'>Design User Interfaces</h1></div>
+					<div className='orangeDiv'><h1 className='whiteFont'>Craft User Experiences</h1></div>
+					<div className='yellowDiv'><h1>Apply Design Thinking</h1></div>
+					<div className='gunMetalDiv'><h1 className='whiteFont'>Build Information Architecture</h1></div>
+					<div className='redDiv'><h1 className='whiteFont'>Copy write for Projects</h1></div>
+					<div className='greenDiv'><h1 className='whiteFont'>Brand Products</h1></div>
+				</div>
 
 				<div className='flexColumn'>
 					<p>FOR DESIGNERS</p>
@@ -188,7 +231,7 @@ function Learnable() {
 				</div>
 			</section>
 
-			<section className='flexBox3 flexBox2 genesysLearnableSects padding'>
+			<section className='flexBox flexBox2 genesysLearnableSects curriculumGridCont'>
 			
 				<div className='flexColumn'>
 					<h1 className='capitalize'>Learning can be fun…</h1>
@@ -210,11 +253,52 @@ function Learnable() {
 					</p>
 				</div>
 
-				<div className='floatRight'></div>
+				<div className='floatRight picGrid'>
+					<img src={fun1}/>
+					<img src={fun2}/>
+					<img src={fun3}/>
+					<img src={fun4}/>
+					<img src={fun5}/>
+					<img src={fun6}/>
+					<img src={fun7}/>
+					<img src={fun8}/>
+					<img src={fun9}/>
+					<img src={fun10}/>
+					<img src={fun11}/>
+					<img src={fun12}/>
+					<img src={fun13}/>
+					<img src={fun14}/>
+					<img src={fun15}/>
+					<img src={fun16}/>
+				</div>
 			</section>
 
-			<section className='flexBox3 flexBox2 greyDiv genesysLearnableSects padding'>
-				<div className='floatLeft'></div>
+			<section className='flexBox flexBox2 greyDiv genesysLearnableSects curriculumGridCont'>
+				<div className='floatLeft expertsGrid'>
+					<div>
+						<img src={expert1}/><h2>Nnamdi</h2><p>Managing Director</p>
+					</div>
+
+					<div>
+						<img src={expert2}/><h2>Ositadinma</h2><p>Learnable Coordinator</p>
+					</div>
+
+					<div>
+						<img src={expert3}/><h2>Idowu</h2><p>Scrum Proffessional</p>
+					</div>
+
+					<div>
+						<img src={expert4}/><h2>Ezra</h2><p>Ass. Learnable Coordinator</p>
+					</div>
+
+					<div>
+						<img src={expert5}/><h2>David</h2><p>Design Lead</p>
+					</div>
+
+					<div>
+						<img src={expert6}/><h2>Emmanuel</h2><p>Software Lead</p>
+					</div>
+				</div>
 
 				<div className='flexColumn'>
 					<h1>Learn from the Experts</h1>
@@ -236,7 +320,24 @@ function Learnable() {
 						Hey! We’ll even teach you how to run a business during the Learnable Business Sessions.
 					</p>
 				</div>
-				<div className='floatRight'></div>
+				<div className='floatRight picGrid'>
+					<img src={fun1}/>
+					<img src={fun2}/>
+					<img src={fun3}/>
+					<img src={fun4}/>
+					<img src={fun5}/>
+					<img src={fun6}/>
+					<img src={fun7}/>
+					<img src={fun8}/>
+					<img src={fun9}/>
+					<img src={fun10}/>
+					<img src={fun11}/>
+					<img src={fun12}/>
+					<img src={fun13}/>
+					<img src={fun14}/>
+					<img src={fun15}/>
+					<img src={fun16}/>
+				</div>
 
 			</section>
 
@@ -257,15 +358,28 @@ function Learnable() {
 				</div>
 			</section>
 
-			<section>
-				<h1>FAQs</h1>
+			<section className='padding learnableOtherSects'>
+				<h1 className='text60'>FAQs</h1>
 				<FAQs/>
-				<NavLink to='#' className='greenFont'>SEE ALL</NavLink>
+				<NavLink to='#' className='greenFont underline flexColumn flexBox2'>SEE ALL</NavLink>
 			</section>
 
-			<section></section>
+			<section className='greyDiv learnableOtherSects'>
+				<h1 className='text60' id='learnableJournalHeader'>Journal</h1>
+				<NavLink to='#' className='greenFont underline paddingHeader'>VIEW ALL</NavLink>
+				<JournalGrid/>
+			</section>
+			
+			<section className='flexBox3 flexBox2' id='mentions'>
+				<NavLink to='#' className='underline'>Mentioned in</NavLink>
+				<img src={mentioned1}/>
+				<img src={mentioned2}/>
+				<img src={mentioned3}/>
+				<img src={mentioned4}/>
+				<img src={mentioned5}/>
+			</section>
 
-			<section></section>
+			<SubscribeDiv/>
 		</main>
 
 	)

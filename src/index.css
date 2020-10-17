@@ -141,6 +141,18 @@ a {
 	background: #03CEA4;
 }
 
+.darkPurpleDiv {
+	background: #2D1E2F;
+}
+
+.gunMetalDiv {
+	background: #273043;
+}
+
+.redDiv {
+	background: #E13F29;
+}
+
 .relativeContainer {
 	position: relative;
 }
@@ -155,7 +167,7 @@ a {
 
 .greenFont {
 	color: #03CEA4;
-
+	font-weight: bold;
 }
 
 .underline {
@@ -172,7 +184,7 @@ a {
 /* - - - - Header - - - - */
 
 #header {
-	height: 144px;
+	height: 130px;
 	grid-area: header;
 	background: white;			
 }
@@ -191,7 +203,7 @@ header, nav, #nav div:first-child {
 }
 
 #nav {
-	height: 144px;
+	height: 130px;
     justify-content: space-around;
     width: 100%;
 }
@@ -214,7 +226,7 @@ span, #devStudio {
 /* - - - - Learnable Header - - - - */
 
 #learnableHeader {
-	top: 144px;
+	top: 130px;
 	padding: 0 5%;
 	width: 100%;
 	grid-area: learnableHeader;
@@ -238,6 +250,11 @@ main {
 }
 
 /* - - - - Footer - - - - */
+
+#arr4 {
+	position: relative;
+	top: 70px;
+}
 
 footer {
 	grid-area: footer;
@@ -283,7 +300,7 @@ footer a {
 	height: 250px;
 }
 
-#cyanSubscribe {
+.cyanSubscribe {
 	background:#03CEA4;
 	color: #273043;
 }
@@ -353,7 +370,6 @@ footer a {
 }
 
 #arr2 {
-	left: 4%;
 	top: 4600px;
 }
 
@@ -495,12 +511,55 @@ footer a {
 	max-width: 50%;
 }
 
-.genesysLearnableSects div {
-	width: 30%;
+.genesysLearnableSects > div {
+	width: 40%;
 }
 
 #play3 {
 	left: 27%;
+}
+
+.curriculumGridCont {
+	height: 800px;
+	padding: 30px 4%;
+}
+
+.curriculumGrid {
+	width: 45% !important;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 230px 230px 230px;
+}
+
+.curriculumGrid div {
+	padding: 0 4%;
+	font-size: 34px;
+}
+
+.expertsGrid {
+	display: grid;
+	width: 50% !important;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 300px 300px;
+}
+
+.expertsGrid img {
+	max-width: 100% !important; 
+}
+
+.expertsGrid h2 {
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+.picGrid {
+	display: grid;
+	width: 40%;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.picGrid img {
+	max-width: 100% !important; 
 }
 
 /* - - - -  FAQ- - - - */
@@ -528,11 +587,45 @@ footer a {
 	top: 10px;
 }
 
-#arr4 {
-	top: 2550px;
+.learnableOtherSects {
+	padding-bottom: 50px; 
+	padding-top: 50px;  
 }
 
 .learnableFAQ {
-	height: 300px;
+	height: 470px;
 	overflow-y: hidden;
+}
+
+#learnableJournalHeader {
+	padding: 20px 4%;
+	color: #273043;
+}
+
+#mentions {
+	height: 250px;
+	padding: 50px 0;
+}
+
+/* - - - - Journal - - - - */
+
+#journalGrid {
+	display: grid;
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0;
+	grid-template-rows: 313px 400px;
+	grid-template-columns: 22% 22% 22% 22%;
+	grid-column-gap: 4%;
+	grid-row-gap: 20px;
+}
+
+#journalGrid h1 {
+	color: #273043;
+	font-size: 34px;
+}
+
+#journalGrid img {
+	width: 102%;
 }
