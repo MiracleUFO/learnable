@@ -78,12 +78,12 @@ function Learnable() {
 				<div>
 					<div id='circlesDiv' className='flexBox3 floatRight'>
 					<div className='circle greenDiv flexColumn flexBox4'>
-						<NavLink to='#' className='flexBox4'><h2>Development</h2><span> ></span></NavLink>
+						<NavLink to='/DevPage' className='flexBox4'><h2>Development</h2><span> ></span></NavLink>
 						<p>What to expect</p>
 					</div>
 
 					<div className='circle cadetBlue flexColumn flexBox4'>
-						<NavLink to='#' className='flexBox4'><h2 className='whiteFont'>Product Design</h2><span className='whiteFont'> ></span></NavLink>
+						<NavLink to='/DesignerPage' className='flexBox4'><h2 className='whiteFont'>Product Design</h2><span className='whiteFont'> ></span></NavLink>
 						<p className='whiteFont'>What to expect</p>
 					</div>
 				</div>
@@ -113,7 +113,7 @@ function Learnable() {
 					</div>
 			</section>
 
-			<section className='flexBox3' id='avatarSect'>
+			<section className='flexBox3 avatarSect'>
 				<div>
 					<h1>We Make People Great</h1>
 					<p>
@@ -157,7 +157,7 @@ function Learnable() {
 						We believe in learning through experimentation. 
 						Our aim is to nurture and grow bright young minds from the get-go because that’s how our industry will thrive.
 					</p>
-					<NavLink to='#' className='greenFont'>LEARN MORE</NavLink>
+					<NavLink to='/DevPage' className='greenFont'>LEARN MORE</NavLink>
 				</div>
 
 				<div className='floatRight curriculumGrid' alt='Developer curriculum'>
@@ -194,7 +194,7 @@ function Learnable() {
 						Right from the start of the program, you’ll get your hands dirty as you get practically involved in the world’s most modern design concepts. 
 						At Genesys, we’re building designers who put the users first.
 					</p>
-					<NavLink to='#' className='greenFont'>LEARN MORE</NavLink>
+					<NavLink to='/DesignerPage' className='greenFont'>LEARN MORE</NavLink>
 				</div>
 			</section>
 
@@ -355,19 +355,19 @@ function Learnable() {
 						Genesys team to bring your own concept to life, from the first pen sketches to the final functioning product. 
 						You’ll then get to show off your special project to everyone.
 					</p>
-					<NavLink to='#' className='greenFont'>GET STARTED</NavLink>
+					<NavLink to='/Apply' className='greenFont'>GET STARTED</NavLink>
 				</div>
 			</section>
 
 			<section className='padding learnableOtherSects'>
 				<h1 className='text60'>FAQs</h1>
 				<FAQs/>
-				<NavLink to='#' className='greenFont underline flexColumn flexBox2'>SEE ALL</NavLink>
+				<NavLink to='/FAQs' className='greenFont underline flexColumn flexBox2'>SEE ALL</NavLink>
 			</section>
 
 			<section className='greyDiv learnableOtherSects'>
 				<h1 className='text60' id='learnableJournalHeader'>Journal</h1>
-				<NavLink to='#' className='greenFont underline paddingHeader'>VIEW ALL</NavLink>
+				<NavLink to='/Journal' className='greenFont underline paddingHeader'>VIEW ALL</NavLink>
 				<JournalGrid/>
 			</section>
 			

@@ -1,3 +1,13 @@
+
+/* - - - - - - - - - - - -
+
+Name: Miracle Ufodiama
+Track: Frontend Virtual
+Week: 15
+Task: Replica of Genesys Learnable Proto
+ - - - - - - - - - - - - - */
+
+
 import React from 'react';
 import {Route} from 'react-router-dom';
 import Header from './components/Header';
@@ -19,7 +29,7 @@ function App() {
     <Route exact path='/' component={Landing} />
     <Route path='/Learnable' component={Learnable} />
     <Route path='/DevPage' component={DevPage} />
-    <Route path='/DesignerPage' component={Learnable} />
+    <Route path='/DesignerPage' component={DesignerPage} />
     <Route path='/Journal' component={Journal} />
     <Route path='/Apply' component={Apply} />
     <Route path='/FAQs' component={FAQPage} />

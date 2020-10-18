@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: 100%;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Nunito, 'sans-serif', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,6 +25,7 @@ section {
 }
 
 h1, h2 {
+	font-family: 'Roboto Mono';
 	color: #17255A;
 	font-size: 40px;
 	font-weight: 900;
@@ -170,6 +171,11 @@ a {
 	font-weight: bold;
 }
 
+.orangeFont {
+	color: #F5772F;
+	font-weight: bold;
+}
+
 .underline {
 	text-decoration: underline;
 }
@@ -227,6 +233,7 @@ span, #devStudio {
 /* - - - - - - Learnable Header - - - - - - */
 
 #learnableHeader {
+	position: static;
 	top: 130px;
 	padding: 0 5%;
 	width: 100%;
@@ -500,7 +507,7 @@ footer a {
 	left: 30px;
 }
 
-#avatarSect div:first-child {
+.avatarSect div:first-child {
 	width: 38.5%;
 }
 
@@ -568,6 +575,42 @@ footer a {
 	max-width: 100% !important; 
 }
 
+
+/* - - - - - - Designer & Developer - - - - - - */
+
+.avatarSectDevDes {
+	padding: 50px 0;
+	margin: 0 20% 0 4%
+}
+
+.avatarSectDevDes div:first-child {
+    width: 50%;
+}
+
+.avatarDevDes {
+	width: 30%;
+	height: 30%;
+	border-radius: 100%;
+	position: relative;
+	top: 100px;
+} 
+
+.avatarDevDes img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	position: relative;
+	top: 5px;
+}
+
+.avatarDevDes p {
+	font-size: 17px;
+}
+
+blockquote {
+	width: 70%;
+}
+
 /* - - - - - - Apply - - - - - - */
 
 #ApplyDiv {
@@ -585,28 +628,32 @@ footer a {
 	bottom: 8px;
 }
 
-#centeredPic {
+.centeredPic {
 	margin: 0 auto;
 	width: 80%;
 	display: block;
+	padding-top: 90px;
 }
 
-#cardWrap {
+.cardWrap {
 	width: 70%;
 	margin: 0 0 0 30% ;
 	padding-bottom: 90px;
+}
+
+#cardWrap {
 	position: relative;
-	top: 70px;
+	top: 80px;
 	z-index: 2;
 	background: white;
 }
 
-#card div {
+.card div {
 	width: 70%;
 	padding: 0 20px;
 }
 
-#card h1 {
+.card h1 {
 	color: #273043;
 }
 

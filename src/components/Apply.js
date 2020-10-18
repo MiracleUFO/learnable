@@ -26,10 +26,10 @@ function Apply() {
 				<img src={applyPic} className='floatRight' />
 			</section>
 
-			<img src={centerPic} id='centeredPic'/>
+			<img src={centerPic} className='centeredPic'/>
 
-			<section id='cardWrap'>
-				<div id='card'>
+			<section className='cardWrap' id='cardWrap'>
+				<div className='card'>
 					<div>
 						<h1>How To Get In</h1>
 						<p>We are very deliberate with our selection process. 
