@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import LearnableHeader from './Learnable-Header';
 import JournalGrid from './JournalGrid';
 import SubscribeDiv from './SubscribeDiv';
-import journalPic from '../images/journal/journalMain.png';
+import journalPic from '../images/shared/journalApplyPic.png';
 import journalAvatar from '../images/journal/journalAvatar.png';
 
 function Journal() {

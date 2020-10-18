@@ -86,14 +86,7 @@ function Landing() {
 				</div>
 			</section>
 
-			<section>
-				<img src={arrUp} className='arr' id='arr2'/>
-				<div className='floatRight subscribe flexBox2 flexBox3 cyanSubscribe'> 
-					<h2 className='h1Intro'>Stay up to date on what we are doing and new learning opportunities</h2>
-					<div><p>Your email</p> <img src={line} /> <p>View privacy policy</p></div>
-					<button>Subscribe</button>
-				</div>
-			</section>
+			<SubscribeDiv/>
 
 		</main>
 	)
