@@ -7,7 +7,7 @@ import journal4 from '../images/journal/journal4.png';
 
 function JournalGrid() {
 	return (
-		<div id='journalGrid'>
+		<div id='journalGrid' className = { document.URL.includes('Journal') ? 'journalGridInJournal' : ''}>
 			<img src={journal1} />
 			<img src={journal2} />
 			<img src={journal3} />

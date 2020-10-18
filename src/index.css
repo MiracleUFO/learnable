@@ -609,16 +609,49 @@ footer a {
 
 /* - - - - Journal - - - - */
 
+#journalHero {
+	height: 420px;
+	margin: 50px 4% 0;
+}
+
+#journalPicDiv {
+	position: relative;
+	bottom: 50px;
+	z-index: 2;
+	margin: 0 4%;
+	padding: 0 0 50px;
+}
+
+#journalPicDiv > div {
+	width: 30%;
+}
+
+#journalPicDiv > img {
+	position: relative;
+	left: -10px;
+	width: 65%;
+}
+
+#journalAvatarDiv {
+	padding-top: 10px;
+	position: relative;
+	right: 5%;
+}
+
+.journalGridInJournal {
+	bottom: 50px;
+}
+
 #journalGrid {
 	display: grid;
-	position: relative;
-	width: 90%;
-	margin: 0 auto;
-	padding: 50px 0;
-	grid-template-rows: 313px 400px;
-	grid-template-columns: 22% 22% 22% 22%;
-	grid-column-gap: 4%;
-	grid-row-gap: 20px;
+    position: relative;
+    width: 93%;
+    margin: 0 4%;
+    padding: 50px 0;
+    grid-template-rows: 313px 500px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 4%;
+    grid-row-gap: 0;
 }
 
 #journalGrid h1 {

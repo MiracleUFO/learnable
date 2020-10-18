@@ -342,8 +342,9 @@ function Learnable() {
 			</section>
 
 			<section className='flexBox3 flexBox2 cadetBlue genesysLearnableSects padding'>
-				<div className='floatLeft'></div>
-
+				
+					<img src={culture}className='floatLeft'/>
+		
 				<div className='flexColumn'>
 					<h1 className='whiteFont'>Apply Your Knowledge</h1>
 					<p className='whiteFont'>
