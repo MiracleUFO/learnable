@@ -39,6 +39,22 @@ import expert3 from '../images/learnable-home/expert3.png';
 import expert4 from '../images/learnable-home/expert4.png';
 import expert5 from '../images/learnable-home/expert5.png';
 import expert6 from '../images/learnable-home/expert6.png';
+import noclass1 from '../images/learnable-home/noclass1.png';
+import noclass2 from '../images/learnable-home/noclass2.png';
+import noclass3 from '../images/learnable-home/noclass3.png';
+import noclass4 from '../images/learnable-home/noclass4.png';
+import noclass5 from '../images/learnable-home/noclass5.png';
+import noclass6 from '../images/learnable-home/noclass6.png';
+import noclass7 from '../images/learnable-home/noclass7.png';
+import noclass8 from '../images/learnable-home/noclass8.png';
+import noclass9 from '../images/learnable-home/noclass9.png';
+import noclass10 from '../images/learnable-home/noclass10.png';
+import noclass11 from '../images/learnable-home/noclass11.png';
+import noclass12 from '../images/learnable-home/noclass12.png';
+import noclass13 from '../images/learnable-home/noclass13.png';
+import noclass14 from '../images/learnable-home/noclass14.png';
+import noclass15 from '../images/learnable-home/noclass15.png';
+import noclass16 from '../images/learnable-home/noclass16.png';
 
 function Learnable() {
 	return (
@@ -58,7 +74,7 @@ function Learnable() {
 					<p>Click link to download...</p>
 					<NavLink to='#'>
 						<h2>Learnable ‘20 Brochure</h2>
-						<img src={line} />
+						<img src={line} alt=''/>
 					</NavLink>
 				</div>
 			</section>
@@ -73,7 +89,7 @@ function Learnable() {
 			</section>
 
 			<section id='learnableIntroVid' className='relativeContainer'>
-				<img src={arrDown} className='arr' id='arr3'/>
+				<img src={arrDown} className='arr' id='arr3' alt='Arrow down'/>
 
 				<div>
 					<div id='circlesDiv' className='flexBox3 floatRight'>
@@ -87,7 +103,7 @@ function Learnable() {
 						<p className='whiteFont'>What to expect</p>
 					</div>
 				</div>
-					<img src={introVid} className='picRight floatRight' id='movedVid'/>
+					<img src={introVid} className='picRight floatRight' id='movedVid' alt=''/>
 				</div>
 			</section>
 
@@ -122,11 +138,11 @@ function Learnable() {
 					</p> <br/>
 					<p>We primarily educate and groom software developers and designers, preparing them for the industry.</p>
 				</div>
-				<div className='greenDiv avatar avatarContainer floatRight'><img src={avatar} className='avatar'/></div>
+				<div className='greenDiv avatar avatarContainer floatRight'><img src={avatar} className='avatar' alt='Black man on green background'/></div>
 			</section>
 
 			<section className='flexBox3 flexBox2 greyDiv genesysLearnableSects padding'>
-				<img src={learnExp} className='floatLeft'/>
+				<img src={learnExp} className='floatLeft' alt=''/>
 
 				<div className='flexColumn'>
 					<h1>An Unusual Learning Experience</h1>
@@ -213,12 +229,12 @@ function Learnable() {
 					</p>
 				</div>
 
-				<img src={eligible} className='floatRight'/>
+				<img src={eligible} className='floatRight' alt=''/>
 			</section>
 
 			<section className='flexBox3 flexBox2 genesysLearnableSects padding orangeDiv relativeContainer' alt='About Culture Section'>
-					<img src={play} className='play' id='play3'/>
-					<img src={culture} className='floatLeft'/>
+					<img src={play} className='play' id='play3' alt=''/>
+					<img src={culture} className='floatLeft' alt=''/>
 
 				<div className='flexColumn'>
 					<h1 className='whiteFont'>Our Culture</h1>
@@ -254,49 +270,49 @@ function Learnable() {
 				</div>
 
 				<div className='floatRight picGrid'>
-					<img src={fun1}/>
-					<img src={fun2}/>
-					<img src={fun3}/>
-					<img src={fun4}/>
-					<img src={fun5}/>
-					<img src={fun6}/>
-					<img src={fun7}/>
-					<img src={fun8}/>
-					<img src={fun9}/>
-					<img src={fun10}/>
-					<img src={fun11}/>
-					<img src={fun12}/>
-					<img src={fun13}/>
-					<img src={fun14}/>
-					<img src={fun15}/>
-					<img src={fun16}/>
+					<img src={fun1} alt=''/>
+					<img src={fun2} alt=''/>
+					<img src={fun3} alt=''/>
+					<img src={fun4} alt=''/>
+					<img src={fun5} alt=''/>
+					<img src={fun6} alt=''/>
+					<img src={fun7} alt=''/>
+					<img src={fun8} alt=''/>
+					<img src={fun9} alt=''/>
+					<img src={fun10} alt=''/>
+					<img src={fun11} alt=''/>
+					<img src={fun12} alt=''/>
+					<img src={fun13} alt=''/>
+					<img src={fun14} alt=''/>
+					<img src={fun15} alt=''/>
+					<img src={fun16} alt=''/>
 				</div>
 			</section>
 
 			<section className='flexBox flexBox2 greyDiv genesysLearnableSects curriculumGridCont'>
 				<div className='floatLeft expertsGrid'>
 					<div>
-						<img src={expert1}/><h2>Nnamdi</h2><p>Managing Director</p>
+						<img src={expert1} alt=''/><h2>Nnamdi</h2><p>Managing Director</p>
 					</div>
 
 					<div>
-						<img src={expert2}/><h2>Ositadinma</h2><p>Learnable Coordinator</p>
+						<img src={expert2} alt=''/><h2>Ositadinma</h2><p>Learnable Coordinator</p>
 					</div>
 
 					<div>
-						<img src={expert3}/><h2>Idowu</h2><p>Scrum Proffessional</p>
+						<img src={expert3} alt=''/><h2>Idowu</h2><p>Scrum Proffessional</p>
 					</div>
 
 					<div>
-						<img src={expert4}/><h2>Ezra</h2><p>Ass. Learnable Coordinator</p>
+						<img src={expert4} alt=''/><h2>Ezra</h2><p>Ass. Learnable Coordinator</p>
 					</div>
 
 					<div>
-						<img src={expert5}/><h2>David</h2><p>Design Lead</p>
+						<img src={expert5} alt=''/><h2>David</h2><p>Design Lead</p>
 					</div>
 
 					<div>
-						<img src={expert6}/><h2>Emmanuel</h2><p>Software Lead</p>
+						<img src={expert6} alt=''/><h2>Emmanuel</h2><p>Software Lead</p>
 					</div>
 				</div>
 
@@ -321,29 +337,29 @@ function Learnable() {
 					</p>
 				</div>
 				<div className='floatRight picGrid'>
-					<img src={fun1}/>
-					<img src={fun2}/>
-					<img src={fun3}/>
-					<img src={fun4}/>
-					<img src={fun5}/>
-					<img src={fun6}/>
-					<img src={fun7}/>
-					<img src={fun8}/>
-					<img src={fun9}/>
-					<img src={fun10}/>
-					<img src={fun11}/>
-					<img src={fun12}/>
-					<img src={fun13}/>
-					<img src={fun14}/>
-					<img src={fun15}/>
-					<img src={fun16}/>
+					<img src={noclass1} alt=''/>
+					<img src={noclass2} alt=''/>
+					<img src={noclass3} alt=''/>
+					<img src={noclass4} alt=''/>
+					<img src={noclass5} alt=''/>
+					<img src={noclass6} alt=''/>
+					<img src={noclass7} alt=''/>
+					<img src={noclass8} alt=''/>
+					<img src={noclass9} alt=''/>
+					<img src={noclass10} alt=''/>
+					<img src={noclass11} alt=''/>
+					<img src={noclass12} alt=''/>
+					<img src={noclass13} alt=''/>
+					<img src={noclass14} alt=''/>
+					<img src={noclass15} alt=''/>
+					<img src={noclass16} alt=''/>
 				</div>
 
 			</section>
 
 			<section className='flexBox3 flexBox2 cadetBlue genesysLearnableSects padding'>
 				
-					<img src={culture}className='floatLeft'/>
+					<img src={culture}className='floatLeft' alt=''/>
 		
 				<div className='flexColumn'>
 					<h1 className='whiteFont'>Apply Your Knowledge</h1>
@@ -373,11 +389,11 @@ function Learnable() {
 			
 			<section className='flexBox3 flexBox2' id='mentions'>
 				<NavLink to='#' className='underline'>Mentioned in</NavLink>
-				<img src={mentioned1}/>
-				<img src={mentioned2}/>
-				<img src={mentioned3}/>
-				<img src={mentioned4}/>
-				<img src={mentioned5}/>
+				<img src={mentioned1} alt='FAST COMPANY'/>
+				<img src={mentioned2} alt='UX Magazine'/>
+				<img src={mentioned3} alt='Wired'/>
+				<img src={mentioned4} alt='Web Visions'/>
+				<img src={mentioned5} alt='Interactions South America'/>
 			</section>
 
 			<SubscribeDiv/>

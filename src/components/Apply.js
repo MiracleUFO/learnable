@@ -23,10 +23,10 @@ function Apply() {
 					You’ll then get to show off your special project to everyone.</p>
 				</div>
 
-				<img src={applyPic} className='floatRight' />
+				<img src={applyPic} className='floatRight' alt=''/>
 			</section>
 
-			<img src={centerPic} className='centeredPic'/>
+			<img src={centerPic} className='centeredPic' alt=''/>
 
 			<section className='cardWrap' id='cardWrap'>
 				<div className='card'>

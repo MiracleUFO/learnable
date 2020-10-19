@@ -24,7 +24,7 @@ section {
 	clear: both;
 }
 
-h1, h2 {
+h1 {
 	font-family: 'Roboto Mono';
 	color: #17255A;
 	font-size: 40px;
@@ -171,6 +171,11 @@ a {
 	font-weight: bold;
 }
 
+.yellowFont {
+	color: #EAC435;
+	font-weight: bold;
+}
+
 .orangeFont {
 	color: #F5772F;
 	font-weight: bold;
@@ -240,11 +245,6 @@ span, #devStudio {
 	grid-area: learnableHeader;
 	height: 50px;
 	justify-content: center;
-}
-
-#learnableHeader a {
-	color: white;
-	text-decoration: underline;
 }
 
 #learnableNav {

@@ -18,7 +18,7 @@ function Journal() {
 			</section>
 
 			<section className='flexBox' id='journalPicDiv'>
-				<img src={journalPic} className='floatLeft' />
+				<img src={journalPic} className='floatLeft' alt=''/>
 				<div>
 					<NavLink to='#' className='greenFont underline'>Inspiration</NavLink>
 					<h1>Learn Design Thinking like a Pro and Build Projects that People will care about</h1>
@@ -29,7 +29,7 @@ function Journal() {
 					Vulputate euismod commodo donec tincidunt et, aliquam. 
 					Eget scelerisque netus habitant dui porttitor cursus. 
 					Ipsum sem ut tortor ac ullamcorper. Lacus.</p>
-					<div className='flexBox3' id='journalAvatarDiv'><img src={journalAvatar}/> <p>David Mong, Apr 9, 2020</p></div>
+					<div className='flexBox3' id='journalAvatarDiv'><img src={journalAvatar} alt=''/> <p>David Mong, Apr 9, 2020</p></div>
 				</div>
 				
 			</section>

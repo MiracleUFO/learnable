@@ -31,7 +31,7 @@ function DesignerPage() {
 					</p>
 				</div>
 
-				<div className='orangeDiv avatarDevDes floatRight'><img src={avatar} className='avatar'/></div>
+				<div className='orangeDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
 			</section>
 
 			<blockquote className='orangeFont text60 floatLeft paddingHeader'>
@@ -40,7 +40,7 @@ function DesignerPage() {
 			</blockquote>
 
 
-			<img src={designPic} className='centeredPic'/>
+			<img src={designPic} className='centeredPic' alt=''/>
 
 			<section className='cardWrap'>
 				<div className='card'>

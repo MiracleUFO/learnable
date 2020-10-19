@@ -26,7 +26,7 @@ function Footer() {
 				</div>
 
 				<div id='footerImgDiv' className='flexBox'>
-					<img src={footerImg} id='footerImg'/>
+					<img src={footerImg} id='footerImg' alt=''/>
 					<p>Learnable is proud to be a collaborative effort of all the arms of our product team
 					<br />
 					<NavLink to='#'>HEAD TO DEVSTUDIO</NavLink>

@@ -8,10 +8,10 @@ import journal4 from '../images/journal/journal4.png';
 function JournalGrid() {
 	return (
 		<div id='journalGrid' className = { document.URL.includes('Journal') ? 'journalGridInJournal' : ''}>
-			<img src={journal1} />
-			<img src={journal2} />
-			<img src={journal3} />
-			<img src={journal4} />
+			<img src={journal1} alt=''/>
+			<img src={journal2} alt=''/>
+			<img src={journal3} alt=''/>
+			<img src={journal4} alt=''/>
 
 			<div>
 				<NavLink to='#' className='flexColumn flexBox greenFont underline paddingHeader'>Inspiration</NavLink>

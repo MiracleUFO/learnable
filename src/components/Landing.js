@@ -3,8 +3,6 @@ import {NavLink} from 'react-router-dom';
 import SubscribeDiv from './SubscribeDiv';
 import introVid from '../images/landing/introVid.png';
 import arrDown from '../images/shared/arr-down.png';
-import line from '../images/landing/line.png';
-import arrUp from '../images/shared/arr-up.png';
 import learnableMan from '../images/landing/pic2-man.png';
 import agora from '../images/landing/agora.png';
 import startZone from '../images/landing/startZone.png';
@@ -21,12 +19,12 @@ function Landing() {
 			</section>
 
 			<section>
-				<img src={arrDown} className='arr' id='arr1'/>
-				<img src={introVid} className='picRight floatRight'/>
+				<img src={arrDown} className='arr' id='arr1' alt='Arrow down'/>
+				<img src={introVid} className='picRight floatRight' alt=''/>
 			</section>
 
 			<section className='flexBox3 flexBox2 genesysSects'>
-				<img src={learnableMan} className='floatLeft'/>
+				<img src={learnableMan} className='floatLeft' alt=''/>
 
 				<div className='flexColumn sectionTag'>
 					<h1>Learnable</h1>
@@ -50,11 +48,11 @@ function Landing() {
 
 				</div>
 
-				<img src={agora} className='floatRight'/>
+				<img src={agora} className='floatRight' alt=''/>
 			</section>
 
 			<section className='flexBox3 flexBox2 genesysSects'>
-				<img src={startZone} className='floatLeft'/>
+				<img src={startZone} className='floatLeft' alt=''/>
 
 				<div className='flexColumn sectionTag'>
 					<h1>StartZone</h1>
@@ -67,7 +65,7 @@ function Landing() {
 			</section>
 
 			<section className='flexBox3 flexBox2 greyDiv genesysSects'>
-			<img src={otherThings} className='floatRight otherThings'/>
+			<img src={otherThings} className='floatRight otherThings' alt=''/>
 
 				<div className='flexColumn sectionTag'>
 					<h1 className='text60'>Other things we <br/> do</h1>
@@ -75,7 +73,7 @@ function Landing() {
 			</section>
 
 			<section className='flexBox3 flexBox2 cadetBlue genesysSects'>
-			<img src={bestT} className='floatRight otherThings'/>
+			<img src={bestT} className='floatRight otherThings' alt=''/>
 				<div className='flexColumn sectionTag'>
 					<h1 className='cadetBlue capitalize'>The best team in the world</h1>
 					<p className='cadetBlue'>

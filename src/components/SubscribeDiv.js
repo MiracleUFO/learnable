@@ -7,10 +7,10 @@ function SubscribeDiv() {
 	let url = document.URL;
 	return (
 		<section>
-				<img src={arrUp}  className='arr' id='arr4'/>
+				<img src={arrUp}  className='arr' id='arr4' alt=''/>
 				<div className={url.includes('Learnable') || url.includes('Dev') || url.includes('Designer') || url.includes('Apply') || url.includes('Journal') || url.includes('FAQs')? classes + ' yellowDiv' : classes + ' cyanSubscribe'}> 
 					<h2 className='h1Intro'>Stay up to date on what we are doing and new learning opportunities</h2>
-					<div><p>Your email</p> <img src={line} /> <p>View privacy policy</p></div>
+					<div><p>Your email</p> <img src={line} alt=''/> <p>View privacy policy</p></div>
 					<button>Subscribe</button>
 				</div>
 			</section>

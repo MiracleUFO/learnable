@@ -25,7 +25,7 @@ function DevPage() {
 					</p><br/>
 				</div>
 
-				<div className='greenDiv avatarDevDes floatRight'><img src={avatar} className='avatar'/></div>
+				<div className='greenDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
 			</section>
 
 			<blockquote className='greenFont text60 floatLeft paddingHeader'>
@@ -33,7 +33,7 @@ function DevPage() {
 			</blockquote>
 
 
-			<img src={devPic} className='centeredPic'/>
+			<img src={devPic} className='centeredPic' alt=''/>
 
 			<section className='cardWrap'>
 				<div className='card'>
