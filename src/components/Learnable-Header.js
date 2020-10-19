@@ -5,11 +5,12 @@ import {NavLink} from 'react-router-dom';
 class LearnableHeader extends React.Component {
 
 	navRef = React.createRef();
+	
 
 	componentDidMount() {
-	let url = document.URL;
 	let links = this.navRef.current.childNodes;
-
+    let url = document.URL;
+    
 	for (let link of links) {
 		if (url.includes(link.getAttribute('href'))) {
 			link.setAttribute('class', ' yellowFont underline');

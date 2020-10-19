@@ -24,7 +24,7 @@ section {
 	clear: both;
 }
 
-h1 {
+h1, h2 {
 	font-family: 'Roboto Mono';
 	color: #17255A;
 	font-size: 40px;
@@ -36,6 +36,7 @@ h1 {
 
 h2 {
 	font-size: 32px;
+	letter-spacing: 0px;
 }
 
 p {
@@ -398,6 +399,10 @@ footer a {
 
 #announcment h2 {
 	padding: 0 0 20px;
+}
+
+#line {
+	width: 100%;
 }
 
 #announcment div:first-child {

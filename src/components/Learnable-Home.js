@@ -64,7 +64,7 @@ function Learnable() {
 
 			<section className='yellowDiv flexBox2 padding' id='announcment'>
 				<div>
-					<h2>Coming Soon: Learnable '20 </h2>
+					<h2>Coming Soon: Learnable'20 </h2>
 					<p>
 						We've started taking in applications for the next batch of learnable interns. 
 						Applications are on till the 21st of Febuary
@@ -73,8 +73,8 @@ function Learnable() {
 				<div className='flexColumn flexBox4'>
 					<p>Click link to download...</p>
 					<NavLink to='#'>
-						<h2>Learnable ‘20 Brochure</h2>
-						<img src={line} alt=''/>
+						<h2>Learnable‘20 Brochure</h2>
+						<img src={line} id='line' alt=''/>
 					</NavLink>
 				</div>
 			</section>
@@ -177,12 +177,12 @@ function Learnable() {
 				</div>
 
 				<div className='floatRight curriculumGrid' alt='Developer curriculum'>
-					<div className='cadetBlue'><h1 className='whiteFont'>Program with JavaScript</h1></div>
-					<div className='greenDiv'><h1 className='whiteFont'>Version Control with Git</h1></div>
-					<div className='yellowDiv'><h1>Web Development with React</h1></div>
-					<div className='darkPurpleDiv'><h1 className='whiteFont'>Building APIs with NodeJS</h1></div>
-					<div className='gunMetalDiv'><h1 className='whiteFont'>Managing Data with MongoDB</h1></div>
-					<div className='orangeDiv'><h1 className='whiteFont'>Deploying with Heroku</h1></div>
+					<div className='cadetBlue'><h2 className='whiteFont'>Program with JavaScript</h2></div>
+					<div className='greenDiv'><h2 className='whiteFont'>Version Control with Git</h2></div>
+					<div className='yellowDiv'><h2>Web Development with React</h2></div>
+					<div className='darkPurpleDiv'><h2 className='whiteFont'>Building APIs with NodeJS</h2></div>
+					<div className='gunMetalDiv'><h2 className='whiteFont'>Managing Data with MongoDB</h2></div>
+					<div className='orangeDiv'><h2 className='whiteFont'>Deploying with Heroku</h2></div>
 				</div>
 
 			</section>
@@ -190,12 +190,12 @@ function Learnable() {
 			<section className='flexBox flexBox2 greyDiv genesysLearnableSects curriculumGridCont'>
 
 				<div className='floatRight curriculumGrid' alt='Designer curriculum'>
-					<div className='cadetBlue'><h1 className='whiteFont'>Design User Interfaces</h1></div>
-					<div className='orangeDiv'><h1 className='whiteFont'>Craft User Experiences</h1></div>
-					<div className='yellowDiv'><h1>Apply Design Thinking</h1></div>
-					<div className='gunMetalDiv'><h1 className='whiteFont'>Build Information Architecture</h1></div>
-					<div className='redDiv'><h1 className='whiteFont'>Copy write for Projects</h1></div>
-					<div className='greenDiv'><h1 className='whiteFont'>Brand Products</h1></div>
+					<div className='cadetBlue'><h2 className='whiteFont'>Design User Interfaces</h2></div>
+					<div className='orangeDiv'><h2 className='whiteFont'>Craft User Experiences</h2></div>
+					<div className='yellowDiv'><h2>Apply Design Thinking</h2></div>
+					<div className='gunMetalDiv'><h2 className='whiteFont'>Build Information Architecture</h2></div>
+					<div className='redDiv'><h2 className='whiteFont'>Copy write for Projects</h2></div>
+					<div className='greenDiv'><h2 className='whiteFont'>Brand Products</h2></div>
 				</div>
 
 				<div className='flexColumn'>
