@@ -13,6 +13,7 @@ class LearnableHeader extends React.Component {
     
 	for (let link of links) {
 		if (url.includes(link.getAttribute('href'))) {
+			console.log(url); console.log(link); console.log(link.getAttribute('href'));
 			link.setAttribute('class', ' yellowFont underline');
 		} else link.setAttribute('class', ' whiteFont underline');
 	}

@@ -11,13 +11,12 @@ class Header extends React.Component {
 			let links = this.navRef.current.childNodes;
 			let url = document.URL;
 
-			links[0].setAttribute('class', ' orangeFont');
-			/*for (let link of links) {
-				if (url.includes(link.getAttribute('href'))) {
+			for (let link of links) {
+				if (url.includes( link.getAttribute('href'))) {
 					link.setAttribute('class', ' orangeFont');
 				} else link.setAttribute('class', '');
 			}
-	*/ }
+	}
 
 	render() {
 	return (
@@ -26,10 +25,10 @@ class Header extends React.Component {
 			<NavLink to='/'><img src={icon} alt='Genesys icon' id='genesysIcon'/></NavLink>
 			<div ref={this.navRef}>
 				<NavLink to='/Learnable'>LEARNABLE</NavLink>
-				<NavLink to='#'>AGORA</NavLink>
-				<NavLink to='#'>STARTZONE</NavLink>
-				<NavLink to='#'>ABOUT</NavLink>
-				<NavLink to='#'>CONTACT</NavLink>
+				<NavLink to='/null'>AGORA</NavLink>
+				<NavLink to='/null'>STARTZONE</NavLink>
+				<NavLink to='/null'>ABOUT</NavLink>
+				<NavLink to='/null'>CONTACT</NavLink>
 			</div>
 
 			<div id='devStudio'><span>build a product with</span> <button><NavLink to='#'>DEVSTUDIO</NavLink></button></div>

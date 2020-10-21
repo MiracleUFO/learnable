@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
 import avatar from '../images/shared/avatar.png';
@@ -8,6 +9,9 @@ function DesignerPage() {
 	return (
 
 		<main>
+
+			<Header/>
+			
 			<LearnableHeader/>
 			<section className='flexBox avatarSect avatarSectDevDes'>
 				<div>

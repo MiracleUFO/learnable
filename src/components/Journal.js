@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 import JournalGrid from './JournalGrid';
 import SubscribeDiv from './SubscribeDiv';
@@ -9,7 +10,8 @@ import journalAvatar from '../images/journal/journalAvatar.png';
 function Journal() {
 	return (
 		<main>
-
+			<Header/>
+			
 			<LearnableHeader/>
 
 			<section className='greyDiv flexBox flexBox2 padding' id='journalHero'>

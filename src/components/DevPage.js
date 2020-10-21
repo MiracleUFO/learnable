@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
 import avatar from '../images/shared/avatar.png';
@@ -7,7 +8,10 @@ import devPic from '../images/devPage/developerPic.png';
 function DevPage() {
 	return (
 		<main>
+			<Header/>
+			
 			<LearnableHeader/>
+
 			<section className='flexBox avatarSect avatarSectDevDes'>
 				<div>
 					<h1 className='text96'>The Learnable Software Developer</h1>

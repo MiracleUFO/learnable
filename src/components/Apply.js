@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
 import applyPic from '../images/apply/applyPic.png';
@@ -8,6 +9,8 @@ import {NavLink} from 'react-router-dom';
 function Apply() {
 	return (
 		<main>
+			<Header/>
+			
 			<LearnableHeader/>
 
 			<section className='flexBox3' id='ApplyDiv'>

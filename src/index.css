@@ -1,9 +1,7 @@
 body {
   margin: 0;
   height: 100%;
-  font-family: Nunito, 'sans-serif', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Nunito, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -64,6 +62,10 @@ a {
 	text-decoration: none;
 	font-size: 14px;
 	color: #273043;
+}
+
+.text24 {
+	font-size: 24px;
 }
 
 .text60 {
@@ -199,10 +201,11 @@ a {
 #header {
 	height: 130px;
 	grid-area: header;
-	background: white;			
+	background: white;
+	z-index: 5;			
 }
 
-header, nav {
+#header, #header nav {
 	position: sticky;
 	top: 0;
 	z-index: 5;	
@@ -235,6 +238,13 @@ span, #devStudio {
 	font-weight: 400;
 	padding: 0 15px;
 }
+
+@media screen and (max-width: 900px) {
+		span, #devStudio {
+			font-size: 10px;
+		}
+}
+
 
 /* - - - - - - Learnable Header - - - - - - */
 
@@ -279,7 +289,6 @@ footer {
 
 footer a {
 	text-decoration: underline;
-	color: 
 }
 
  #footerImgDiv {
@@ -312,6 +321,13 @@ footer a {
 	height: 250px;
 }
 
+@media screen and (max-width: 900px) {
+.subscribe h2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+}
+
 .cyanSubscribe {
 	background:#03CEA4;
 	color: #273043;
@@ -320,12 +336,8 @@ footer a {
 
 /* - - - - - - Landing - - - - - - */
 
-#landing  {
-	padding-top: 35px
-}
-
 #landing section:nth-child(2) {
-	padding: 90px 0;
+	padding: 30px 7%;
 }
 
 #landingIntro div {
@@ -338,12 +350,16 @@ footer a {
 
 .h1Intro {
 	width: 60%;
+	padding-top: 20px;
+}
+
+#landingIntro h1 {
+	width: 70%
 }
 
 #landingIntro p {
 	width: 40%;
 	font-size: 16px;
-	font-weight: 600;
 } 
 
 .picRight {
@@ -355,13 +371,38 @@ footer a {
 	position: absolute;
 	margin: 0 auto;
 	left: 50%;
-	top:750px;
+	top: 150px;
 	font-weight: 600;
 }
 
 .genesysSects {
 	height: 700px;
-	padding: 90px 0;
+}
+
+.genesysSects img, #otherThingsGrid {
+	position: relative;
+	width: 50%;
+	height: 600px;
+}
+
+#otherThingsGrid {
+	height: 600px;
+	display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 240px 240px;
+    grid-gap: 15px;
+}
+
+#otherThingsGrid img {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+.genesysSects img {
+		height: 450px;
+		width: 48%;
+}
 }
 
 .sectionTag {
@@ -375,11 +416,6 @@ footer a {
 	text-decoration: underline;
 	color:#03CEA4;
 	font-weight: 600;
-}
-
-.otherThings {
-	height: 570px;
-	font-size: 60px;
 }
 
 #arr2 {
@@ -428,7 +464,7 @@ footer a {
 	width: 550px;
     z-index: 3;
     position: absolute;
-    top: -150px;
+    top: -130px;
     right: 3%;
 }
 
@@ -675,23 +711,27 @@ blockquote {
 	bottom: 50px;
 	z-index: 2;
 	margin: 0 4%;
-	padding: 0 0 50px;
+	padding: 0 0 90px;
 }
 
 #journalPicDiv > div {
-	width: 30%;
+	width: 40%;
 }
 
 #journalPicDiv > img {
 	position: relative;
 	left: -10px;
-	width: 65%;
+	width: 55%;
 }
 
 #journalAvatarDiv {
 	padding-top: 10px;
-	position: relative;
-	right: 5%;
+	width: 250px;
+}
+
+#journalAvatarDiv p {
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 .journalGridInJournal {
@@ -699,6 +739,7 @@ blockquote {
 }
 
 #journalGrid {
+	height: 1050px;
 	display: grid;
     position: relative;
     width: 93%;
@@ -727,6 +768,13 @@ blockquote {
 	padding-bottom: 100px;
 }
 
+@media screen and (max-width: 900px) {
+	#faqHeader {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 #faqs h2 {
 	font-size: 24px;
 	line-height: 27px;
@@ -736,6 +784,7 @@ blockquote {
 #faqs li {
 	padding-bottom: 50px;
 	list-style-type: none;
+	width: 100%;
 }
 
 #faqs div img {
@@ -743,11 +792,22 @@ blockquote {
 	height: 10px;
 	position: relative;
 	top: 10px;
+	left: 20px;
 }
 
 .learnableOtherSects {
 	padding-bottom: 50px; 
 	padding-top: 50px;  
+}
+
+.faqsContainer {
+	width: 50%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+ul {
+	align-items: flex-start;
 }
 
 .learnableFAQ {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
 import FAQs from './FAQs';
@@ -7,14 +8,15 @@ import faq from '../images/faq/FAQ.png';
 function FAQPage() {
 	return (
 		<main>
-		<LearnableHeader/>
+			<Header/>
 
-		<section className='flexBox padding' id='faqHeader'><h1 className='text96'>FAQs</h1> <img src={faq} alt=''/></section>
+			<LearnableHeader/>
 
-		<section><FAQs/></section>
+			<section className='flexBox padding' id='faqHeader'><h1 className='text96'>FAQs</h1> <img src={faq} alt=''/></section>
 
-		<SubscribeDiv/>
+			<section><FAQs/></section>
 
+			<SubscribeDiv/>
 		</main>
 	)
 }

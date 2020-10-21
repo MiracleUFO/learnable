@@ -1,17 +1,23 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import Header from './Header';
 import SubscribeDiv from './SubscribeDiv';
 import introVid from '../images/landing/introVid.png';
+import play from '../images/shared/play.png';
 import arrDown from '../images/shared/arr-down.png';
 import learnableMan from '../images/landing/pic2-man.png';
 import agora from '../images/landing/agora.png';
 import startZone from '../images/landing/startZone.png';
-import otherThings from '../images/landing/group.png';
+import otherThings1 from '../images/landing/otherThings1.png';
+import otherThings2 from '../images/landing/otherThings2.png';
+import otherThings3 from '../images/landing/otherThings3.png';
 import bestT from '../images/landing/bestT.png';
 
 function Landing() {
 	return (
 		<main id='landing'>
+
+			<Header/>
 
 			<section id='landingIntro' className='padding'>
 				<h1 className='h1Intro capitalize'>Genesys provides opportunities for young Nigerian techies and opportunities to grow and innovate.</h1>
@@ -20,7 +26,14 @@ function Landing() {
 
 			<section>
 				<img src={arrDown} className='arr' id='arr1' alt='Arrow down'/>
-				<img src={introVid} className='picRight floatRight' alt=''/>
+
+				<div className='relativeContainer'>
+						<div className='centeredIcon'>
+							<img src={play} alt='Play button'/>
+							<p className='whiteFont'>#weAreGenesys</p>
+						</div>
+						<img src={introVid} className='picRight floatRight' alt=''/>
+				</div>
 			</section>
 
 			<section className='flexBox3 flexBox2 genesysSects'>
@@ -64,8 +77,21 @@ function Landing() {
 				</div>
 			</section>
 
-			<section className='flexBox3 flexBox2 greyDiv genesysSects'>
-			<img src={otherThings} className='floatRight otherThings' alt=''/>
+			<section className='flexBox3 flexBox2 greyDiv genesysSects' id='otherThingsContainer'>
+				<div id='otherThingsGrid' className='floatRight otherThings'>
+					<img src={otherThings1}  alt=''/>
+					<NavLink to='#'><h2 className='underline'>GenesysIgnite</h2></NavLink>
+
+					<div>
+						<img src={otherThings2} alt=''/>
+						<h2 className='text24 underline'>CodeVille</h2>
+					</div>
+
+					<div>
+						<img src={otherThings3} alt=''/>
+						<h2 className='text24 underline'>Pink Summer of Code</h2>
+					</div>
+				</div>
 
 				<div className='flexColumn sectionTag'>
 					<h1 className='text60'>Other things we <br/> do</h1>

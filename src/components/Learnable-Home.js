@@ -1,5 +1,6 @@
 import React from 'react';
 import LearnableHeader from './Learnable-Header';
+import Header from './Header';
 import FAQs from './FAQs';
 import JournalGrid from './JournalGrid';
 import SubscribeDiv from './SubscribeDiv';
@@ -59,7 +60,7 @@ import noclass16 from '../images/learnable-home/noclass16.png';
 function Learnable() {
 	return (
 		<main>
-
+			<Header/>
 			<LearnableHeader/>
 
 			<section className='yellowDiv flexBox2 padding' id='announcment'>

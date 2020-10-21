@@ -4,8 +4,8 @@ import tick from '../images/faq/tickFAQ.png';
 
 function FAQs () {
 	return (
-		<div className={document.URL.includes('FAQs')? '':'learnableFAQ'}>
-			<ul className='flexColumn flexBox2 underline' id='faqs'>
+		<div className={document.URL.includes('FAQs')? ' faqsContainer':'learnableFAQ faqsContainer'}>
+			<ul className='flexColumn underline' id='faqs'>
 				<li><div className='flexBox'><h2>How many people can attend a course?</h2><img src={tick} alt=''/></div><img src={line} alt=''/></li>
 				<li><div className='flexBox'><h2>What’s the learning experience like?</h2><img src={tick} alt=''/></div><img src={line} alt=''/></li>
 				<li><div className='flexBox'><h2>Who are the coaches?</h2><img src={tick} alt=''/></div><img src={line} alt=''/></li>
