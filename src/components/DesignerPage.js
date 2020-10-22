@@ -36,11 +36,9 @@ function DesignerPage() {
 					</p>
 				</div>
 
-				<LazyLoad once>
-					<div className='orangeDiv avatarDevDes floatRight'>
+				<div className='orangeDiv avatarDevDes floatRight'>
 					<img src={avatar} className='avatar' alt=''/>
-					</div>
-				</LazyLoad>
+				</div>
 				
 			</section>
 

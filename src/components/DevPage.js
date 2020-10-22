@@ -30,9 +30,7 @@ function DevPage() {
 					</p><br/>
 				</div>
 
-				<LazyLoad once>
-					<div className='greenDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
-				</LazyLoad>
+				<div className='greenDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
 			</section>
 
 			<blockquote className='greenFont text60 floatLeft paddingHeader'>
