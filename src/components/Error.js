@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 
 function Error() {
