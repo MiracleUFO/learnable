@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import {NavLink} from 'react-router-dom';
 import Header from './Header';
 import LearnableHeader from './Learnable-Header';
@@ -19,9 +20,10 @@ function Journal() {
 				<button>CATEGORIES</button>
 			</section>
 
-			<section className='flexBox' id='journalPicDiv'>
-				<img src={journalPic} className='floatLeft' alt=''/>
-				<div>
+			<section className='flexBox' id='journalPicDiv'>			
+				<img src={journalPic}  alt=''/>
+
+				<div id='picDivTag'>
 					<NavLink to='#' className='greenFont underline'>Inspiration</NavLink>
 					<h1>Learn Design Thinking like a Pro and Build Projects that People will care about</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -31,15 +33,20 @@ function Journal() {
 					Vulputate euismod commodo donec tincidunt et, aliquam. 
 					Eget scelerisque netus habitant dui porttitor cursus. 
 					Ipsum sem ut tortor ac ullamcorper. Lacus.</p>
-					<div className='flexBox3' id='journalAvatarDiv'><img src={journalAvatar} alt=''/> <p>David Mong, Apr 9, 2020</p></div>
+					<div className='flexBox3' id='journalAvatarDiv'>
+						<img src={journalAvatar} alt=''/> <p>David Mong, Apr 9, 2020</p>
+					</div>
 				</div>
 				
 			</section>
 
-			<JournalGrid/>
-			<JournalGrid/>
+			<LazyLoad once>
+				<JournalGrid/>
+				<JournalGrid/>
+				<SubscribeDiv/>
+			</LazyLoad>
 
-			<SubscribeDiv/>
+			
 		</main>
 	)
 }

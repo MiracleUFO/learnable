@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import LazyLoad from 'react-lazyload';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
 import avatar from '../images/shared/avatar.png';
@@ -35,7 +36,12 @@ function DesignerPage() {
 					</p>
 				</div>
 
-				<div className='orangeDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
+				<LazyLoad once>
+					<div className='orangeDiv avatarDevDes floatRight'>
+					<img src={avatar} className='avatar' alt=''/>
+					</div>
+				</LazyLoad>
+				
 			</section>
 
 			<blockquote className='orangeFont text60 floatLeft paddingHeader'>
@@ -44,7 +50,7 @@ function DesignerPage() {
 			</blockquote>
 
 
-			<img src={designPic} className='centeredPic' alt=''/>
+			<LazyLoad once><img src={designPic} className='centeredPic' alt=''/></LazyLoad>
 
 			<section className='cardWrap'>
 				<div className='card'>

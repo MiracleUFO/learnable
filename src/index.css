@@ -592,7 +592,7 @@ footer a {
 
 .expertsGrid {
 	display: grid;
-	width: 50% !important;
+	width: 100% !important;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 300px 300px;
 }
@@ -608,7 +608,7 @@ footer a {
 
 .picGrid {
 	display: grid;
-	width: 40%;
+	width: 100%;
 	grid-template-columns: 25% 25% 25% 25%;
 }
 
@@ -684,7 +684,7 @@ blockquote {
 
 #cardWrap {
 	position: relative;
-	top: 80px;
+	top: 52px;
 	z-index: 2;
 	background: white;
 }
@@ -714,7 +714,7 @@ blockquote {
 	padding: 0 0 90px;
 }
 
-#journalPicDiv > div {
+#picDivTag {
 	width: 40%;
 }
 
@@ -792,7 +792,6 @@ blockquote {
 	height: 10px;
 	position: relative;
 	top: 10px;
-	left: 20px;
 }
 
 .learnableOtherSects {

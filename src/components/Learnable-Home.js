@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import LearnableHeader from './Learnable-Header';
 import Header from './Header';
 import FAQs from './FAQs';
@@ -89,6 +90,7 @@ function Learnable() {
 				</div>
 			</section>
 
+
 			<section id='learnableIntroVid' className='relativeContainer'>
 				<img src={arrDown} className='arr' id='arr3' alt='Arrow down'/>
 
@@ -139,12 +141,14 @@ function Learnable() {
 					</p> <br/>
 					<p>We primarily educate and groom software developers and designers, preparing them for the industry.</p>
 				</div>
-				<div className='greenDiv avatar avatarContainer floatRight'><img src={avatar} className='avatar' alt='Black man on green background'/></div>
+
+				<div className='greenDiv avatar avatarContainer floatRight'>
+					<img src={avatar} className='avatar' alt='Black man on green background'/>
+				</div>
 			</section>
 
 			<section className='flexBox3 flexBox2 greyDiv genesysLearnableSects padding'>
 				<img src={learnExp} className='floatLeft' alt=''/>
-
 				<div className='flexColumn'>
 					<h1>An Unusual Learning Experience</h1>
 					<p>
@@ -230,7 +234,7 @@ function Learnable() {
 					</p>
 				</div>
 
-				<img src={eligible} className='floatRight' alt=''/>
+				<img src={eligible}  alt='' className='floatRight'/>
 			</section>
 
 			<section className='flexBox3 flexBox2 genesysLearnableSects padding orangeDiv relativeContainer' alt='About Culture Section'>
@@ -270,7 +274,9 @@ function Learnable() {
 					</p>
 				</div>
 
+				<LazyLoad>
 				<div className='floatRight picGrid'>
+				
 					<img src={fun1} alt=''/>
 					<img src={fun2} alt=''/>
 					<img src={fun3} alt=''/>
@@ -288,9 +294,11 @@ function Learnable() {
 					<img src={fun15} alt=''/>
 					<img src={fun16} alt=''/>
 				</div>
+				</LazyLoad>
 			</section>
 
 			<section className='flexBox flexBox2 greyDiv genesysLearnableSects curriculumGridCont'>
+			<LazyLoad once>
 				<div className='floatLeft expertsGrid'>
 					<div>
 						<img src={expert1} alt=''/><h2>Nnamdi</h2><p>Managing Director</p>
@@ -316,6 +324,7 @@ function Learnable() {
 						<img src={expert6} alt=''/><h2>Emmanuel</h2><p>Software Lead</p>
 					</div>
 				</div>
+				</LazyLoad>
 
 				<div className='flexColumn'>
 					<h1>Learn from the Experts</h1>
@@ -337,6 +346,8 @@ function Learnable() {
 						Hey! We’ll even teach you how to run a business during the Learnable Business Sessions.
 					</p>
 				</div>
+
+				<LazyLoad once>
 				<div className='floatRight picGrid'>
 					<img src={noclass1} alt=''/>
 					<img src={noclass2} alt=''/>
@@ -355,7 +366,7 @@ function Learnable() {
 					<img src={noclass15} alt=''/>
 					<img src={noclass16} alt=''/>
 				</div>
-
+				</LazyLoad>
 			</section>
 
 			<section className='flexBox3 flexBox2 cadetBlue genesysLearnableSects padding'>
@@ -382,12 +393,15 @@ function Learnable() {
 				<NavLink to='/FAQs' className='greenFont underline flexColumn flexBox2'>SEE ALL</NavLink>
 			</section>
 
+			<LazyLoad once>
 			<section className='greyDiv learnableOtherSects'>
 				<h1 className='text60' id='learnableJournalHeader'>Journal</h1>
 				<NavLink to='/Journal' className='greenFont underline paddingHeader'>VIEW ALL</NavLink>
 				<JournalGrid/>
 			</section>
+			</LazyLoad>
 			
+			<LazyLoad once>
 			<section className='flexBox3 flexBox2' id='mentions'>
 				<NavLink to='#' className='underline'>Mentioned in</NavLink>
 				<img src={mentioned1} alt='FAST COMPANY'/>
@@ -396,6 +410,7 @@ function Learnable() {
 				<img src={mentioned4} alt='Web Visions'/>
 				<img src={mentioned5} alt='Interactions South America'/>
 			</section>
+			</LazyLoad>
 
 			<SubscribeDiv/>
 		</main>

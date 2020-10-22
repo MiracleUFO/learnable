@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import {NavLink} from 'react-router-dom';
 import Header from './Header';
 import SubscribeDiv from './SubscribeDiv';
@@ -25,17 +26,22 @@ function Landing() {
 			</section>
 
 			<section>
-				<img src={arrDown} className='arr' id='arr1' alt='Arrow down'/>
+				<LazyLoad once><img src={arrDown} className='arr' id='arr1' alt='Arrow down'/></LazyLoad>
 
+			<LazyLoad once>
 				<div className='relativeContainer'>
+					
 						<div className='centeredIcon'>
 							<img src={play} alt='Play button'/>
 							<p className='whiteFont'>#weAreGenesys</p>
 						</div>
+					
 						<img src={introVid} className='picRight floatRight' alt=''/>
 				</div>
+			</LazyLoad>
 			</section>
 
+			<LazyLoad once>
 			<section className='flexBox3 flexBox2 genesysSects'>
 				<img src={learnableMan} className='floatLeft' alt=''/>
 
@@ -49,7 +55,9 @@ function Landing() {
 
 				</div>
 			</section>
+			</LazyLoad>
 
+			<LazyLoad once>
 			<section className='flexBox3 flexBox2 greyDiv genesysSects'>
 				<div className='flexColumn sectionTag'>
 					<h1>Agora</h1>
@@ -63,7 +71,9 @@ function Landing() {
 
 				<img src={agora} className='floatRight' alt=''/>
 			</section>
+			</LazyLoad>
 
+			<LazyLoad once>
 			<section className='flexBox3 flexBox2 genesysSects'>
 				<img src={startZone} className='floatLeft' alt=''/>
 
@@ -76,7 +86,9 @@ function Landing() {
 					<NavLink to='#'>HERE’S HOW</NavLink>
 				</div>
 			</section>
+			</LazyLoad>
 
+			<LazyLoad once>
 			<section className='flexBox3 flexBox2 greyDiv genesysSects' id='otherThingsContainer'>
 				<div id='otherThingsGrid' className='floatRight otherThings'>
 					<img src={otherThings1}  alt=''/>
@@ -97,7 +109,9 @@ function Landing() {
 					<h1 className='text60'>Other things we <br/> do</h1>
 				</div>
 			</section>
+			</LazyLoad>
 
+			<LazyLoad once>
 			<section className='flexBox3 flexBox2 cadetBlue genesysSects'>
 			<img src={bestT} className='floatRight otherThings' alt=''/>
 				<div className='flexColumn sectionTag'>
@@ -109,6 +123,7 @@ function Landing() {
 					<NavLink to='#'>SEE TEAM</NavLink>
 				</div>
 			</section>
+			</LazyLoad>
 
 			<SubscribeDiv/>
 

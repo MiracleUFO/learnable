@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import LazyLoad from 'react-lazyload';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
 import applyPic from '../images/apply/applyPic.png';
@@ -29,7 +30,7 @@ function Apply() {
 				<img src={applyPic} className='floatRight' alt=''/>
 			</section>
 
-			<img src={centerPic} className='centeredPic' alt=''/>
+			<LazyLoad once><img src={centerPic} className='centeredPic' alt=''/></LazyLoad>
 
 			<section className='cardWrap' id='cardWrap'>
 				<div className='card'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import Header from './Header';
 import LearnableHeader from './Learnable-Header';
 import SubscribeDiv from './SubscribeDiv';
@@ -29,7 +30,9 @@ function DevPage() {
 					</p><br/>
 				</div>
 
-				<div className='greenDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
+				<LazyLoad once>
+					<div className='greenDiv avatarDevDes floatRight'><img src={avatar} className='avatar' alt=''/></div>
+				</LazyLoad>
 			</section>
 
 			<blockquote className='greenFont text60 floatLeft paddingHeader'>
@@ -37,7 +40,7 @@ function DevPage() {
 			</blockquote>
 
 
-			<img src={devPic} className='centeredPic' alt=''/>
+			<LazyLoad once><img src={devPic} className='centeredPic' alt=''/></LazyLoad>
 
 			<section className='cardWrap'>
 				<div className='card'>
