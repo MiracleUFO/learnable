@@ -4,7 +4,6 @@ import LearnableHeader from './Learnable-Header';
 function Error() {
 	return (
 		<div>
-			<Header/>
 			<h1 className='text60'>Page not found</h1>
 		</div>
 		)
