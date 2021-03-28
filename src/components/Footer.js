@@ -12,7 +12,7 @@ function Footer() {
 	return (
 		<footer className='flexBox flexColumn'>
 
-			<div className='flexBox'>
+			<div id='footerRow1' className='flexBox'>
 				<div className='flexColumn'>
 					<NavLink to='/DevPage'>BUILD DIFFERENT</NavLink>
 					<NavLink to='/DesignerPage'>DESIGN DIFFERENT</NavLink>
@@ -29,7 +29,7 @@ function Footer() {
 					<img src={footerImg} id='footerImg' alt=''/>
 					<p>Learnable is proud to be a collaborative effort of all the arms of our product team
 					<br />
-					<NavLink to='#'>HEAD TO DEVSTUDIO</NavLink>
+					<NavLink to='#'>DEVSTUDIO</NavLink>
 					</p>
 				</div>
 			</div>

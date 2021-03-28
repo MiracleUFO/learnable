@@ -12,7 +12,6 @@ function Journal() {
 	return (
 		<main>
 			<Header/>
-			
 			<LearnableHeader/>
 
 			<section className='greyDiv flexBox flexBox2 padding' id='journalHero'>

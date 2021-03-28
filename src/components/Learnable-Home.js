@@ -8,7 +8,6 @@ import SubscribeDiv from './SubscribeDiv';
 import {NavLink} from 'react-router-dom';
 import line from '../images/learnable-home/linebold.png';
 import introVid from '../images/learnable-home/learnableIntroVid.png';
-import play from '../images/shared/play.png';
 import arrDown from '../images/shared/arr-down.png';
 import avatar from '../images/shared/avatar.png';
 import learnExp from '../images/learnable-home/learnExp.png';
@@ -59,12 +58,19 @@ import noclass15 from '../images/learnable-home/noclass15.png';
 import noclass16 from '../images/learnable-home/noclass16.png';
 
 function Learnable() {
+
+	let closeAnnouncement = (e) => {
+		document.getElementById('announcment').setAttribute('class', 'none');
+		document.getElementById('learnableIntro').setAttribute('class', 'paddingChange');
+	}
+
 	return (
-		<main>
-			<Header/>
-			<LearnableHeader/>
+		<main id='learnableHome'>
+			<Header />
+			<LearnableHeader />
 
 			<section className='yellowDiv flexBox2 padding' id='announcment'>
+				<span id='closeIcon' onClick={closeAnnouncement}>X</span>
 				<div>
 					<h2>Coming Soon: Learnable'20 </h2>
 					<p>
@@ -72,7 +78,7 @@ function Learnable() {
 						Applications are on till the 21st of Febuary
 					</p>
 				</div>
-				<div className='flexColumn flexBox4'>
+				<div className='flexColumn flexBox4 flexColumnReverse'>
 					<p>Click link to download...</p>
 					<NavLink to='#'>
 						<h2>Learnable‘20 Brochure</h2>
@@ -81,9 +87,9 @@ function Learnable() {
 				</div>
 			</section>
 
-			<section>
+			<section id='learnableIntro'>
 				<div className='padding h1Intro'>
-					<h1 className='text96'>Everything <br/> is Learnable</h1>
+					<h1 className='text96'>Everything is Learnable</h1>
 					<p className='picRight'>
 					Learnable is the perfect product development internship program brought to you by Genesys.
 					</p>
@@ -150,7 +156,7 @@ function Learnable() {
 			<section className='flexBox3 flexBox2 greyDiv genesysLearnableSects padding'>
 				<img src={learnExp} className='floatLeft' alt=''/>
 				<div className='flexColumn'>
-					<h1>An Unusual Learning Experience</h1>
+					<h1>Unusual Learning Experience</h1>
 					<p>
 						At Genesys, we believe in the learning processes as much as we believe in the results. 
 						By applying a combination of active and social learning methodologies, 
@@ -238,7 +244,6 @@ function Learnable() {
 			</section>
 
 			<section className='flexBox3 flexBox2 genesysLearnableSects padding orangeDiv relativeContainer' alt='About Culture Section'>
-					<img src={play} className='play' id='play3' alt=''/>
 					<img src={culture} className='floatLeft' alt=''/>
 
 				<div className='flexColumn'>
@@ -336,7 +341,7 @@ function Learnable() {
 				</div>
 			</section>
 
-			<section className='flexBox3 flexBox2 genesysLearnableSects padding'>
+			<section className='flexBox3 flexBox2 genesysLearnableSects padding curriculumGridCont'>
 				<div className='flexColumn'>
 					<h1 className='capitalize'>Learning doesn’t always have to be in the classroom</h1>
 					<p>
@@ -371,7 +376,7 @@ function Learnable() {
 
 			<section className='flexBox3 flexBox2 cadetBlue genesysLearnableSects padding'>
 				
-					<img src={culture}className='floatLeft' alt=''/>
+				<img src={culture}className='floatLeft' alt=''/>
 		
 				<div className='flexColumn'>
 					<h1 className='whiteFont'>Apply Your Knowledge</h1>

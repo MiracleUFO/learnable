@@ -8,9 +8,8 @@ import faq from '../images/faq/FAQ.png';
 function FAQPage() {
 	return (
 		<main>
-			<Header/>
-
-			<LearnableHeader/>
+			<Header />
+			<LearnableHeader />
 
 			<section className='flexBox padding' id='faqHeader'><h1 className='text96'>FAQs</h1> <img src={faq} alt=''/></section>
 

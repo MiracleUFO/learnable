@@ -17,9 +17,7 @@ import bestT from '../images/landing/bestT.png';
 function Landing() {
 	return (
 		<main id='landing'>
-
 			<Header/>
-
 			<section id='landingIntro' className='padding'>
 				<h1 className='h1Intro capitalize'>Genesys provides opportunities for young Nigerian techies and opportunities to grow and innovate.</h1>
 				<p>We understand that opportunities are scarce in these parts. We are either creating or exposing our people to these opportunities.</p>		
@@ -42,7 +40,7 @@ function Landing() {
 			</section>
 
 			<LazyLoad once>
-			<section className='flexBox3 flexBox2 genesysSects'>
+			<section className='flexBox3 flexBox2 genesysSects' id='firstSectImg'>
 				<img src={learnableMan} className='floatLeft' alt=''/>
 
 				<div className='flexColumn sectionTag'>
@@ -74,7 +72,7 @@ function Landing() {
 			</LazyLoad>
 
 			<LazyLoad once>
-			<section className='flexBox3 flexBox2 genesysSects'>
+			<section className='flexBox3 flexBox2 genesysSects' id='thirdSectImg'>
 				<img src={startZone} className='floatLeft' alt=''/>
 
 				<div className='flexColumn sectionTag'>

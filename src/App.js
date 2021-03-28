@@ -1,13 +1,3 @@
-
-/* - - - - - - - - - - - -
-
-Name: Miracle Ufodiama
-Track: Frontend Virtual
-Week: 15
-Task: Replica of Genesys Learnable Proto
- - - - - - - - - - - - - - */
-
-
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Landing from './components/Landing';

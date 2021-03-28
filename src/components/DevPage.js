@@ -8,9 +8,8 @@ import devPic from '../images/devPage/developerPic.png';
 
 function DevPage() {
 	return (
-		<main>
+		<main id='Developer'>
 			<Header/>
-			
 			<LearnableHeader/>
 
 			<section className='flexBox avatarSect avatarSectDevDes'>
@@ -40,7 +39,7 @@ function DevPage() {
 
 			<LazyLoad once><img src={devPic} className='centeredPic' alt=''/></LazyLoad>
 
-			<section className='cardWrap'>
+			<section className='cardWrap' id='cardWrap'>
 				<div className='card'>
 					<div>
 						<h1>We expect you to…</h1>

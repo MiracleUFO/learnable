@@ -4,9 +4,9 @@ import LearnableHeader from './Learnable-Header';
 
 function ComingSoon() {
 	return (
-		<div>
-			<Header/>
-			<LearnableHeader/>
+		<div className='comingSoon'>
+			<Header />
+			<LearnableHeader />
 			<h1 className='text60'>Coming soon...</h1>
 		</div>
 		)

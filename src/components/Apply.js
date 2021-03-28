@@ -9,10 +9,9 @@ import {NavLink} from 'react-router-dom';
 
 function Apply() {
 	return (
-		<main>
-			<Header/>
-			
-			<LearnableHeader/>
+		<main id='Apply'>
+			<Header />
+			<LearnableHeader />
 
 			<section className='flexBox3' id='ApplyDiv'>
 

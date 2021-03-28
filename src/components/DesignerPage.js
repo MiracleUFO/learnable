@@ -9,11 +9,10 @@ import designPic from '../images/designerPage/designPic.png';
 function DesignerPage() {
 	return (
 
-		<main>
+		<main id='Designer'>
+			<Header />
+			<LearnableHeader />
 
-			<Header/>
-			
-			<LearnableHeader/>
 			<section className='flexBox avatarSect avatarSectDevDes'>
 				<div>
 					<h1 className='text96'>The Learnable Product Designer</h1>
@@ -50,7 +49,7 @@ function DesignerPage() {
 
 			<LazyLoad once><img src={designPic} className='centeredPic' alt=''/></LazyLoad>
 
-			<section className='cardWrap'>
+			<section className='cardWrap' id='cardWrap'>
 				<div className='card'>
 					<div>
 						<h1>We expect you to…</h1>
