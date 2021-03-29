@@ -8,6 +8,7 @@ import SubscribeDiv from './SubscribeDiv';
 import {NavLink} from 'react-router-dom';
 import line from '../images/learnable-home/linebold.png';
 import introVid from '../images/learnable-home/learnableIntroVid.png';
+import hero from '../images/learnable-home/heroBg.jpg';
 import arrDown from '../images/shared/arr-down.png';
 import avatar from '../images/shared/avatar.png';
 import learnExp from '../images/learnable-home/learnExp.png';
@@ -112,7 +113,10 @@ function Learnable() {
 						<p className='whiteFont'>What to expect</p>
 					</div>
 				</div>
-					<img src={introVid} className='picRight floatRight' id='movedVid' alt=''/>
+					{window.innerWidth >=800 ?
+					<img src={introVid} className='picRight floatRight' id='movedVid' alt=''/> :
+					<img src={hero} className='picRight floatRight' id='movedVid' alt=''/> 
+					}
 				</div>
 			</section>
 
