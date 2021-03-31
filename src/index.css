@@ -299,8 +299,6 @@ span, #devStudio {
 		justify-content: center;
 		align-items: center;
 		top: 15vh;
-		
-
 		height: 90vh;
 		width: 100vw;
 		transition: max-height, height, visibility 9s ease-in ;
@@ -693,11 +691,35 @@ footer a {
 }
 
 .centeredIcon {
-	position: absolute;
-	margin: 0 auto;
-	left: 50%;
-	top: 150px;
+	width: 150px;
+  position: absolute;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 50%;
+  top: 160px;
 	font-weight: 600;
+	font-size: 20px;
+}
+
+.centeredIcon img {
+	width: 47%;
+}
+
+@media screen and (min-width: 2000px) {
+	.picRight {
+		width: 90vw;
+	}
+
+	.centeredIcon {
+		top: 270px;
+	}
+
+	.centeredIcon img {
+		width: 60%;
+	}
 }
 
 .genesysSects {
