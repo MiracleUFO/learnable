@@ -708,17 +708,25 @@ footer a {
 	width: 47%;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1450px) {
 	.picRight {
 		width: 90vw;
 	}
 
-	.centeredIcon {
-		top: 270px;
-	}
-
 	.centeredIcon img {
 		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.centeredIcon {
+		top: 250px;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.centeredIcon {
+		top: 300px;
 	}
 }
 
