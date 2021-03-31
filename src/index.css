@@ -705,7 +705,13 @@ footer a {
 }
 
 .centeredIcon img {
-	width: 47%;
+	width: 35%;
+}
+
+@media screen and (min-width: 800px) {
+	.centeredIcon img {
+		width: 47%;
+	}
 }
 
 @media screen and (min-width: 1450px) {
